@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string playSceneName, tutorialSceneName;
     [SerializeField] private GameObject menu, credits;
 
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     public void Play()
     {
         SceneManager.LoadScene(playSceneName);
